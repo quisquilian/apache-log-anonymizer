@@ -18,11 +18,11 @@ Usage
 
 * Step 1
   
-  Before running the script, you will need to update the project location (line 33) in the python file. Paste in the location where you stored the project.
+  Before running the script, you will need to update the project location variable (line 33) in the python file. Paste in the location where you stored the project.
     
-    **projectLocation**
 
 * Step 2
+
   Execute script
   ```
   $ python log-anonymizer.py
@@ -33,9 +33,9 @@ Assumptions
 
 * This program assumes log files are saved at a file location (i.e. local computer, server, shared network drive, mounted file share, ftp, etc).
 
-* This program assumes the Apache log format is set to LogFormat "%h %l %u %t \"%r\" %>s %O
+* This program assumes the Apache log format is set to **"%h %l %u %t \"%r\" %>s %O**
 
-* File outputs consist of txt and parquet. I chose txt format mainly for readability. As the volume of data scales, I would recommend parquet for its compression efficiencies. 
+* The file output formats consist of txt and parquet. I chose txt format mainly for readability. As the volume of data scales, I would recommend parquet for its compression efficiencies. 
 
 Future Improvements
 -------------------
